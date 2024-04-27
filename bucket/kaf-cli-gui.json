@@ -1,0 +1,30 @@
+{
+  "version": "1.2.9.61",
+  "description": "kaf-cli的衍生品，实现图形化界面、自动生成文字封面。txt2epub、mobi、azw3。aardio编写",
+  "homepage": "https://github.com/Mikachu2333/kaf-cli-gui",
+  "license": {
+    "identifier": "MulanPSL",
+    "url": "https://github.com/Mikachu2333/kaf-cli-gui/blob/main/LICENSE"
+  },
+  "architecture": {
+    "32bit": {
+      "url": "https://mirror.ghproxy.com/https://github.com/Mikachu2333/kaf-cli-gui/releases/download/1.2.9.61/kaf-cli_gui-full.exe",
+      "hash": "726A24542EF0E79F0B82EC9B33F9E9DCFB8D38B0F9AD205AC6D647C6DC9A94AA"
+    }
+  },
+  "bin": "kaf-cli_gui-full.exe",
+  "shortcuts": [
+    [
+      "kaf-cli_gui-full.exe",
+      "kaf-cli_gui-full"
+    ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "32bit": {
+        "url": "https://mirror.ghproxy.com/https://github.com/Mikachu2333/kaf-cli-gui/releases/download/v$version/kaf-cli_gui-full.exe"
+      }
+    }
+  }
+}
