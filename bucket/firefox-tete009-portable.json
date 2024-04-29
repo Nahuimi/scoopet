@@ -1,0 +1,51 @@
+{
+  "version": "125.0.2",
+  "description": "Popular open source web browser. (tete009 private build)",
+  "homepage": "http://www1.plala.or.jp/tete009/en-US/software.html#FIREFOX",
+  "license": "MPL-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/paulxjz/scoopet/releases/download/tete009/firefox-125.0.2-2024042310.en-US.win32-tete009-x64-sse3-pgo.7z",
+      "hash": "7319a908d53ac044402246efca374a0b3380f05002135eff78f3e279d65a25aa",
+      "extract_dir": "firefox-125.0.2-2024042310.en-US.win32-tete009-x64-sse3-pgo"
+    }
+  },
+  "installer": {
+    "script": [
+      "function CreateFile([String] $file, [String] $content = $null) {",
+      "    if (-not (Test-Path \"$persist_dir\\$file\")) {",
+      "        Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+      "        Set-Content \"$dir\\$file\" $content",
+      "    }",
+      "}",
+      "CreateFile 'tmemutil.ini' \"[General]`nPortable=1\""
+    ]
+  },
+  "bin": "firefox.exe",
+  "shortcuts": [
+    [
+      "firefox.exe",
+      "Firefox"
+    ]
+  ],
+  "persist": [
+    "PortableData",
+    "tmemutil.ini"
+  ],
+  "checkver": {
+    "url": "https://github.com/paulxjz/scoopet/releases/tag/tete009",
+    "regex": "firefox-([\\d.]+)-(?<date>\\d+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/paulxjz/scoopet/releases/download/tete009/firefox-$version-$matchDate.en-US.win32-tete009-x64-sse3-pgo.7z",
+        "extract_dir": "firefox-$version-$matchDate.en-US.win32-tete009-x64-sse3-pgo",
+        "hash": {
+          "url": "http://www1.plala.or.jp/tete009/en-US/software.html",
+          "regex": "x64 SSE3(?:.*\\s){11}.*SHA256.*$sha256"
+        }
+      }
+    }
+  }
+}
