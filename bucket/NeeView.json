@@ -1,0 +1,40 @@
+{
+  "version": "40.7",
+  "description": "Image and manga viewer for Windows",
+  "homepage": "https://bitbucket.org/neelabo/neeview/wiki/Home",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://bitbucket.org/neelabo/neeview/downloads/NeeView41.0-fd.zip",
+      "hash": "FC29CB7C8C8FC815A52AB0AE6435CA4D3CF65C862BDAA549F71CB7D0695A6D0F",
+      "extract_dir": "NeeView41.0-x64-fd"
+    }
+  },
+  "suggest": {
+    "windowsdesktop-runtime": "extras/windowsdesktop-runtime"
+  },
+  "pre_install": [
+    "if(!(Test-Path \"$persist_dir\\Profile\")) {",
+    "    New-Item -Type Directory \"$dir\\Profile\"",
+    "}"
+  ],
+  "persist": "Profile",
+  "shortcuts": [
+    [
+      "NeeView.exe",
+      "NeeView"
+    ]
+  ],
+  "checkver": {
+    "url": "https://www.vector.co.jp/soft/dl/winnt/art/se512262.html",
+    "regex": "<span class=\"version\">([\\d\\.]+)</span>"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://bitbucket.org/neelabo/neeview/downloads/NeeView$version-fd.zip",
+        "extract_dir": "NeeView$version-x64-fd"
+      }
+    }
+  }
+}
