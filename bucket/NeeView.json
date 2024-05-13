@@ -7,7 +7,7 @@
     "64bit": {
       "url": "https://bitbucket.org/neelabo/neeview/downloads/NeeView41.0-fd.zip",
       "hash": "FC29CB7C8C8FC815A52AB0AE6435CA4D3CF65C862BDAA549F71CB7D0695A6D0F",
-      "extract_dir": "NeeView41.0-x64-fd"
+      "extract_dir": "NeeView41.0-fd"
     }
   },
   "suggest": {
