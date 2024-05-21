@@ -7,7 +7,7 @@
     "64bit": {
       "url": "https://download.oracle.com/java/17/archive/jdk-17.0.11_windows-x64_bin.zip",
       "hash": {
-      "url": "$url.sha256"
+      "url": "c907bfc7618cfd6e71a2e5b0a0b79b61a41608620731bf9ec97ef3579aada0c5"
     },
     }
   },
