@@ -12,7 +12,6 @@
       "hash": "726A24542EF0E79F0B82EC9B33F9E9DCFB8D38B0F9AD205AC6D647C6DC9A94AA"
     }
   },
- "innosetup": true,
   "bin": "kaf-cli.exe",
   "shortcuts": [
     [
