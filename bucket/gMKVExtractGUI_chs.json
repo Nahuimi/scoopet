@@ -1,14 +1,11 @@
 {
-  "version": "2.6.2.0",
+  "version": "2.8.0",
   "description": "A GUI for mkvextract utility (part of MKVToolNix) which incorporates most (if not all) functionality of mkvextract and mkvinfo utilities.",
-  "homepage": "https://github.com/hooke007/gMKVExtractGUI_chs/",
-  "license": {
-    "identifier": "MulanPSL",
-    "url": "https://mirror.ghproxy.com/https://github.com/hooke007/gMKVExtractGUI_chs/blob/v2.6.2.x/LICENSE"
-  },
+  "homepage": "https://github.com/Nahuimi/scoopet/releases/tag/gMKVExtractGUI_chs",
+  "license": "",
   "depends": "mkvtoolnix",
-  "url": "https://mirror.ghproxy.com/https://github.com/hooke007/gMKVExtractGUI_chs/releases/download/v2.6.2.0/gMKVExtractGUI_chs_v2.6.2.0.7z",
-  "hash": "0515A704CB752FC491CAF68A51C58AA777AD347A10672AB2AEEB16959D43C5D1",
+  "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v2.8.0.zip",
+  "hash": "C05CB8BEEA70FDF3FEB9AB2863C73A233FE2A9E56075D0DA1331F8941A6AD739",
   "bin": "gMKVExtractGUI.exe",
   "shortcuts": [
     [
@@ -24,6 +21,6 @@
   "persist": "gMKVExtractGUI.ini",
   "checkver": "github",
   "autoupdate": {
-    "url": "https://mirror.ghproxy.com/https://github.com/hooke007/gMKVExtractGUI_chs/releases/download/v$version/gMKVExtractGUI_chs_v$version.7z"
+    "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v$version.7z"
   }
 }
