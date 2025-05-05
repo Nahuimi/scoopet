@@ -4,8 +4,8 @@
   "homepage": "https://github.com/Nahuimi/scoopet/releases/tag/gMKVExtractGUI_chs",
   "license": "",
   "depends": "mkvtoolnix",
-  "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v2.8.1.zip",
-  "hash": "28C0BECEB80AD695E25A4E5580163FED5BCCA5B3CFDA7C518009DCB9EE91EA9C",
+  "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v2.8.1.rar",
+  "hash": "BD875B5AD07BBEACC42FAA30FDA12A7334EE6159182D43BE9B8152765B652AC7",
   "bin": "gMKVExtractGUI.exe",
   "shortcuts": [
     [
