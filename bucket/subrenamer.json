@@ -1,12 +1,12 @@
 {
-    "version": "4.2.0",
-    "description": "SubRenamer is a subtitle renaming tool.",
+    "version": "4.4.1",
+    "description": "SubRenamer is a subtitle renaming tool",
     "homepage": "https://github.com/arition/SubRenamer",
     "license": "GPLv3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/arition/SubRenamer/releases/download/v4.2.0/SubRenamer-win-x64.zip",
-            "hash": "8c8117c06e3370e2f01841065c215c571832f7373c238c042c34da039b7d72ca"
+            "url": "https://github.com/arition/SubRenamer/releases/download/v4.4.1/SubRenamer-win-x64.zip",
+            "hash": "5a5ccf038ef6989cec8ed87f9ba078cfcca10a51b63691c3a2212734314b1d58"
         }
     },
     "shortcuts": [
@@ -15,7 +15,6 @@
             "SubRenamer"
         ]
     ],
-    "bin": "SubRenamer.exe",
     "checkver": {
         "github": "https://github.com/arition/SubRenamer"
     },

@@ -1,15 +1,16 @@
 {
-    "homepage": "https://www.yuque.com/",
+    "version": "4.1.7.1320",
     "description": "Professional note and document repositories",
-    "version": "3.2.3.1111",
+    "homepage": "https://yuque.com/",
     "license": {
         "identifier": "EULA",
-        "url": "https://www.yuque.com/terms"
+        "url": "https://yuque.com/terms"
     },
+    "notes": "Your Yuque data are not persisted by Scoop and still storaged in '%APPDATA%\\yuque-desktop'.",
     "architecture": {
         "64bit": {
-            "url": "https://app.nlark.com/yuque-desktop/3.2.3.1111/Yuque-3.2.3.1111.exe#/Yuque_3.2.3.1111.7z",
-            "hash": "86da42a4dd249299ddc85c8bfe3e63baabfdb15487f6d794ea7c0cc6786631a0",
+            "url": "https://app.nlark.com/yuque-desktop/4.1.7.1320/BJf30853eb74f6492ab1da0a91edf5d71e/Yuque-4.1.7.1320.exe#/dl.7z",
+            "hash": "2e5f7aad1b07ecedd71b4a06effa3544046e0922f20bae9115a3deec8f49249d",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\" -Removal",
@@ -25,15 +26,14 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.yuque.com/download",
-        "regex": "Yuque-([\\d.]+).exe"
+        "url": "https://yuque.com/download",
+        "regex": "yuque-desktop%2F(?<version>[\\d.]+)%2F(?<release>\\w+)%2FYuque-[\\d.]+\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://app.nlark.com/yuque-desktop/$version/Yuque-$version.exe#/Yuque_$version.7z"
+                "url": "https://app.nlark.com/yuque-desktop/$matchVersion/$matchRelease/Yuque-$matchVersion.exe#/dl.7z"
             }
         }
-    },
-    "notes": "Your Yuque data are not persisted by Scoop and still storaged in '%APPDATA%\\yuque-desktop'."
+    }
 }
