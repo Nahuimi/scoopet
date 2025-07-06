@@ -1,13 +1,13 @@
 {
-  "version": "42.6",
+  "version": "43.3",
   "description": "Image and manga viewer for Windows",
   "homepage": "https://github.com/neelabo/NeeView",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/neelabo/NeeView/releases/download/42.6/NeeView42.6-fd.zip",
-      "hash": "3FDB1624C53EB5B325E44DEAC0F8CEBDE4C77731B093CD631451639CE60B01A8",
-      "extract_dir": "NeeView42.6-fd"
+      "url": "https://github.com/neelabo/NeeView/releases/download/43.3/NeeView43.3-fd.zip",
+      "hash": "D829C672C884203CF85449517361F951C38A45485FC2D9EB7E46E9D71A6AB8BB",
+      "extract_dir": "NeeView43.3-fd"
     }
   },
   "suggest": {
