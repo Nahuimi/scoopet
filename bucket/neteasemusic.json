@@ -1,5 +1,5 @@
 {
-    "version": "3.1.13.204183",
+    "version": "3.1.16.204365",
     "description": "网易云音乐客户端",
     "homepage": "https://music.163.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.13.204183_64.exe#/dl.7z",
-            "hash": "bcb36973dae73fecf34d5f7f606f84d931542812efdd1b1f530ad1f14f4fd285"
+            "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.16.204365_64.exe#/dl.7z",
+            "hash": "2e203755b0dbe402fd9d56e078a38dade1026e692b271587ec2e65a1a8a75daf"
         },
         "32bit": {
-            "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.13.204183_32.exe#/dl.7z",
-            "hash": "b0ebd5dc5412e312d4fcac325cd59b367388d515e1e6fc6cdcfdc89c39758a66"
+            "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.16.204365_32.exe#/dl.7z",
+            "hash": "cfbfecf64984adadc111c5d7a6ec206d940f9302c40e25c064c1121e7a81332e"
         }
     },
     "installer": {

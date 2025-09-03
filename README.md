@@ -107,7 +107,7 @@ scoop config aria2-min-split-size 4M
 #### 外语学习
 
 |   中文名称   |                          App                           | 自动更新 |  备注  |
-| :----------: | :----------------------------------------------------: | :------: | :----: |
+|:------------:|:------------------------------------------------------:|:--------:|:------:|
 |  阿波波外语  |              [aboboo](http://aboboo.com)               |    ✓     | 精简版 |
 |  阿波波外语  |            [aboboo-full](http://aboboo.com)            |    ✓     | 完整版 |
 |   欧路词典   |               [eudic](https://eudic.net)               |    ✓     |        |
@@ -124,20 +124,20 @@ scoop config aria2-min-split-size 4M
 #### 学术研究
 
 |   中文名称   |                        App                         | 自动更新 |      备注       |
-| :----------: | :------------------------------------------------: | :------: | :-------------: |
+|:------------:|:--------------------------------------------------:|:--------:|:---------------:|
 |  CAJViewer   | [cajviewer](https://cajviewer.cnki.net/index.html) |    ✓     | by @rayinfinite |
+|   FreeTex    |        [freetex](https://xdxsb.top/FreeTex)        |    ✓     |                 |
 | 全球学术快报 |      [cnkiexpress](https://express.cnki.net)       |    ✓     | by @rayinfinite |
 |   KingDraw   |           [kingdraw](http://kingdraw.cn)           |    ✓     |                 |
 
 #### 日常使用
 
 |    中文名称     |                                            App                                            | 自动更新 |                         备注                         |
-| :-------------: | :---------------------------------------------------------------------------------------: | :------: | :--------------------------------------------------: |
+|:---------------:|:-----------------------------------------------------------------------------------------:|:--------:|:----------------------------------------------------:|
 |    阿里云盘     |                               [adrive](https://alipan.com)                                |    ✓     |                                                      |
 |    百度云盘     |                      [baidunetdisk](https://pan.baidu.com/download)                       |    ✓     |                   推荐 WinGet 安装                   |
 |      钉钉       |                             [dingtalk](https://dingtalk.com)                              |    ✓     |                                                      |
 |      抖音       |                               [douyin](https://douyin.com)                                |    ✓     |                                                      |
-|  抖音直播伴侣   |                 [douyin-streamingtool](https://streamingtool.douyin.com)                  |    ✓     |                                                      |
 |   哔哩下载姬    |                      [downkyi](https://github.com/leiurayer/downkyi)                      |    ✓     |                     by @CronusLM                     |
 |    Edgeless     |                           [edgeless](https://home.edgeless.top)                           |    ✓     |                   by @IsaacWangTT                    |
 |    亿图图示     |                             [edrawmax](https://edrawsoft.cn)                              |    ✓     |                                                      |
@@ -151,7 +151,6 @@ scoop config aria2-min-split-size 4M
 |       TIM       |                                 [tim](https://tim.qq.com)                                 |    ✓     |                                                      |
 |     uTools      |                                 [utools](https://u.tools)                                 |    ✓     |                                                      |
 |     小狼毫      |                                 [weasel](https://rime.im)                                 |    ✓     |                                                      |
-|    企业微信     |                         [wechatwork](https://work.weixin.qq.com)                          |    ✓     |                                                      |
 |    WPSOffice    |                          [wpsoffice-cn](https://wps.com/zh-hant)                          |    ✓     |                                                      |
 |      语雀       |                                [yuque](https://yuque.com)                                 |    ✓     | 复制于 [dorado](https://github.com/chawyehsu/dorado) |
 |    AIGCPanel    |                            [aigcpanel](https://aigcpanel.com)                             |    ✓     |                                                      |
@@ -165,7 +164,7 @@ scoop config aria2-min-split-size 4M
 ### Win 专属
 
 |        中文名称        |                                     App                                     | 自动更新 |     备注     |
-| :--------------------: | :-------------------------------------------------------------------------: | :------: | :----------: |
+|:----------------------:|:---------------------------------------------------------------------------:|:--------:|:------------:|
 |    MisakaTranslator    |     [misakatranslator](https://github.com/hanmin0822/MisakaTranslator)      |    ✓     | by @CronusLM |
 |       mpv.net_CM       |          [mpv.net-cm](https://hooke007.github.io/index2#mpvnetcm)           |    ✓     |              |
 |   HEU_KMS_Activator    |       [heu-kms-activator](https://github.com/zbezj/HEU_KMS_Activator)       |    ✓     |              |
@@ -182,9 +181,8 @@ scoop config aria2-min-split-size 4M
 ### 开源镜像
 
 |           App           | 自动更新 |
-| :---------------------: | :------: |
+|:-----------------------:|:--------:|
 |       Blender-cn        |    ✓     |
-|       FreeCAD-cn        |    ✓     |
 |         Git-cn          |    ✓     |
 |         GIMP-cn         |    ✓     |
 |       GIMP@dev-cn       |    ✓     |
@@ -193,8 +191,6 @@ scoop config aria2-min-split-size 4M
 |        KiCAD-cn         |    ✓     |
 |     LibreOffice-cn      |    ✓     |
 |         LyX-cn          |    ✓     |
-|      Micromamba-cn      |    ✓     |
-|      Miniconda-cn       |    ✓     |
 |      Miniforge-cn       |    ✓     |
 | Navicat-Premium-Lite-cn |    ✓     |
 |      OBS-Studio-cn      |    ✓     |
