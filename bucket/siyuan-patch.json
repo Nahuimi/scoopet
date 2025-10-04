@@ -1,5 +1,5 @@
 {
-  "version": "3.3.3",
+  "version": "3.3.4",
   "description": "SiYuan is a local-first personal knowledge management system, support fine-grained block-level reference and Markdown instant-render editing.",
   "homepage": "https://github.com/demoshang/siyuan-patch",
   "license": {
@@ -7,8 +7,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.3.3/siyuan-v3.3.3-win.exe#/dl.7z",
-      "hash": "4c70f0bc9ffa64bd07a56589e31bd3bae5a13a278e7d4eab314007f3bd65203a",
+      "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.3.4/siyuan-v3.3.4-win.exe#/dl.7z",
+      "hash": "5149a12cdaa0f7d0ecb4d24c0b4d14efee79ccfd21582319400cdc1e9b48a606",
       "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\" -Force -Recurse"
