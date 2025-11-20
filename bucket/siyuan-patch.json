@@ -7,8 +7,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.3.6/siyuan-v3.3.6-win.exe#/dl.7z",
-      "hash": "c94111eaeb56b2f159ded3a62ca0b30eb17c1bb86286e6ff555266aa6e18824e",
+      "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.4.0/siyuan-v3.4.0-win.exe#/dl.7z",
+      "hash": "aaf77da7702f90d38e640a2237d2f844a16167406b99c715b2f74ca17f8fac2d",
       "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\" -Force -Recurse"
