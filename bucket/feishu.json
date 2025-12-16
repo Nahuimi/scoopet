@@ -1,5 +1,5 @@
 {
-    "version": "7.52.6",
+    "version": "7.57.6",
     "homepage": "https://feishu.cn/",
     "description": "AI 时代先进生产力平台",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://lf6-ug-sign.feishucdn.com/ee-appcenter/cc68a89d/Feishu-win32_x64-7.52.6-signed.exe#/dl.7z",
-            "hash": "md5:912f4c52aef6f4e53ace186f6083312e"
+            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/91e591eb/Feishu-win32_x64-7.57.6-signed.exe#/dl.7z",
+            "hash": "md5:c41565949e722c3f340186541e71479f"
         },
         "32bit": {
-            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/cc68a89d/Feishu-win32_ia32-7.52.6-signed.exe#/dl.7z",
-            "hash": "md5:912f4c52aef6f4e53ace186f6083312e"
+            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/91e591eb/Feishu-win32_ia32-7.57.6-signed.exe#/dl.7z",
+            "hash": "md5:c41565949e722c3f340186541e71479f"
         }
     },
     "extract_to": "app",
@@ -31,7 +31,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://lf6-ug-sign.feishucdn.com/ee-appcenter/$matchId/Feishu-win32_x64-$version-signed.exe#/dl.7z"
+                "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/$matchId/Feishu-win32_x64-$version-signed.exe#/dl.7z"
             },
             "32bit": {
                 "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/$matchId/Feishu-win32_ia32-$version-signed.exe#/dl.7z"

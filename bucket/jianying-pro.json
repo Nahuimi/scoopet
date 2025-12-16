@@ -2,10 +2,10 @@
     "homepage": "https://www.capcut.cn/",
     "description": "Video editing application produced by ByteDance",
     "license": "Proprietary",
-    "version": "9.1.0.13454",
-    "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_9_1_0_13454_jianyingpro_0_creatortool.exe#/jianyingpro.7z",
-    "hash": "054d51b523fb0ab5a7d033597cbb06f075a879726433059e74fb7c4fe2d6a71d",
-    "extract_dir": "JYPacket/9.1.0.13454",
+    "version": "9.7.1.13726",
+    "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_9_7_1_13726_jianyingpro_0_creatortool.exe#/jianyingpro.7z",
+    "hash": "de188511216ee0a3e2d2c4a1d7e1df6d6d72cf1d5722da310658acd6129da5fc",
+    "extract_dir": "JYPacket/9.7.1.13726",
     "shortcuts": [
         [
             "JianyingPro.exe",

@@ -11,13 +11,13 @@
 >
 > ⚠️ For a better management, this repo now only contains manifests of softwares for Chinese users, for international softwares, please add the bucket [Extras-Plus](https://github.com/Scoopforge/Extras-Plus).
 
+## 🏃 开始
+
 对于熟悉 Scoop 的用户：
 
 ```powershell
 scoop bucket add extras-cn https://github.com/Scoopforge/Extras-CN
 ```
-
-# 🏃 开始
 
 ## 🚲 安装 Scoop
 
@@ -148,7 +148,9 @@ scoop config aria2-min-split-size 4M
 |  洛雪音乐助手   |                  [lx-music](https://github.com/lyswhut/lx-music-desktop)                  |    ✓     |                                                      |
 |   网易云音乐    |                           [neteasemusic](https://music.163.com)                           |    ✓     |                                                      |
 |    腾讯会议     |                      [tencent-meeting](https://meeting.tencent.com)                       |    ✓     |                    by @Ryanjiena                     |
+|    夸克网盘     |                          [quarkclouddrive](https://pan.quark.cn)                          |    ✓     |                                                      |
 |       TIM       |                                 [tim](https://tim.qq.com)                                 |    ✓     |                                                      |
+|     QQ 音乐     |                               [qqmusic](hhttps://y.qq.com/)                               |    ✓     |                                                      |
 |     uTools      |                                 [utools](https://u.tools)                                 |    ✓     |                                                      |
 |     小狼毫      |                                 [weasel](https://rime.im)                                 |    ✓     |                                                      |
 |    WPSOffice    |                          [wpsoffice-cn](https://wps.com/zh-hant)                          |    ✓     |                                                      |
@@ -159,6 +161,7 @@ scoop config aria2-min-split-size 4M
 |  Fishing-Funds  |                  [fishing-funds](https://github.com/1zilc/fishing-funds)                  |    ✓     |                                                      |
 |    HBuilderX    |                       [hbuilderx](https://dcloud.io/hbuilderx.html)                       |    ✓     |                                                      |
 | 微信小程序 SDK  | [wechatdevtools](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html) |    ✓     |                                                      |
+|     WeGame      |                            [wegame](https://www.wegame.com.cn)                            |    ✓     |                                                      |
 | M3u8-Downloader |             [m3u8-downloader](https://github.com/HeiSir2014/M3U8-Downloader)              |    ✓     |                                                      |
 
 ### Win 专属
@@ -192,6 +195,7 @@ scoop config aria2-min-split-size 4M
 |     LibreOffice-cn      |    ✓     |
 |         LyX-cn          |    ✓     |
 |      Miniforge-cn       |    ✓     |
+|        MSYS2-cn         |    ✓     |
 | Navicat-Premium-Lite-cn |    ✓     |
 |      OBS-Studio-cn      |    ✓     |
 |        Octave-cn        |    ✓     |
