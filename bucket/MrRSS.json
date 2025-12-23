@@ -23,11 +23,7 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/WCY-dt/MrRSS/releases/download/v$version/MrRSS-$version-windows-amd64-portable.zip",
-        "hash": {
-          "url": "$baseurl",
-          "jp": "assets[?name == `MrRSS-$version-windows-amd64-portable.zip`].digest | [0]"
-        }
+        "url": "https://github.com/WCY-dt/MrRSS/releases/download/v$version/MrRSS-$version-windows-amd64-portable.zip"
       }
     }
   }
