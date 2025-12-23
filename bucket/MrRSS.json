@@ -19,7 +19,7 @@
   "persist": "data",
   "checkver": {
     "url": "https://api.github.com/repos/WCY-dt/MrRSS/releases/latest",
-    "jsonpath": "$.tag_name",
+    "jp": "$.tag_name",
     "regex": "v([\\d.]+)"
   },
   "autoupdate": {
