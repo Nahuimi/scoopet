@@ -20,7 +20,7 @@
   "checkver": {
     "github": "https://github.com/WCY-dt/MrRSS",
     "regex": "v([\\d.]+)"
-  }
+  },
   "autoupdate": {
     "architecture": {
       "64bit": {
