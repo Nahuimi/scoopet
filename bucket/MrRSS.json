@@ -18,8 +18,8 @@
   },
   "persist": "data",
   "checkver": {
-    "url": "https://api.github.com/repos/WCY-dt/MrRSS/releases/latest",
-    "jp": "$.tag_name",
+    "url": "https://api.github.com/repos/WCY-dt/MrRSS/tags",
+    "jp": "$[0].name",
     "regex": "v([\\d.]+)"
   },
   "autoupdate": {
