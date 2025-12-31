@@ -1,11 +1,11 @@
 {
-  "version": "2.8.1",
+  "version": "2.11.1",
   "description": "A GUI for mkvextract utility (part of MKVToolNix) which incorporates most (if not all) functionality of mkvextract and mkvinfo utilities.",
   "homepage": "https://github.com/Nahuimi/scoopet/releases/tag/gMKVExtractGUI_chs",
   "license": "",
   "depends": "mkvtoolnix",
-  "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v2.8.1.rar",
-  "hash": "BD875B5AD07BBEACC42FAA30FDA12A7334EE6159182D43BE9B8152765B652AC7",
+  "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI.v2.11.1.rar",
+  "hash": "0ff2bc47227800d6db81526e0ca0d4e9455100ef49d561c0982d563165524b5d",
   "bin": "gMKVExtractGUI.exe",
   "shortcuts": [
     [
@@ -15,12 +15,10 @@
   ],
   "pre_install": [
     "if (!(Test-Path \"$persist_dir\\config.json\")) {",
-    "    New-Item -Force -Path \"$dir\" -Name 'gMKVExtractGUI.ini' -Value \"MKVToolnix Path:$(versiondir 'mkvtoolnix' 'current' $global)\" | Out-Null",
+    "    New-Item -Force -Path \"$dir\" -Name 'gMKVExtractGUI.ini' -Value \"MKVToolnix 路径:$(versiondir 'mkvtoolnix' 'current' $global)\" | Out-Null",
     "}"
   ],
   "persist": "gMKVExtractGUI.ini",
   "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/Nahuimi/scoopet/releases/download/gMKVExtractGUI_chs/gMKVExtractGUI_chs_v$version.7z"
-  }
+  "autoupdate": {}
 }
