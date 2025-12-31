@@ -19,4 +19,6 @@
     "transmission-edit.exe",
     "transmission-remote.exe",
     "transmission-show.exe"
-  ]
+  ],
+  "checkver": "skip",
+  "autoupdate": { }
