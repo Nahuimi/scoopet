@@ -7,15 +7,15 @@
     "architecture": {
         "64bit": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe#/setup.exe",
-            "hash": "md5:96159fcb523ae404b707186a75b4104e"
+            "hash": "sha256:96159fcb523ae404b707186a75b4104e"
         },
         "32bit": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12.exe#/setup.exe",
-            "hash": "md5:9203d78e635e4f348d62f574a01cc58c"
+            "hash": "sha256:9203d78e635e4f348d62f574a01cc58c"
         },
         "arm64": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12-arm64.exe#/setup.exe",
-            "hash": "md5:a4476454abcc329b04d330a296995cce"
+            "hash": "sha256:a4476454abcc329b04d330a296995cce"
         }
     },
     "pre_install": [
