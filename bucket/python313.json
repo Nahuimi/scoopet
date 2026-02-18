@@ -1,5 +1,5 @@
 {
-    "version": "3.13.11",
+    "version": "3.13.12",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -7,15 +7,15 @@
     "architecture": {
         "64bit": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe#/setup.exe",
-            "hash": "sha256:96159fcb523ae404b707186a75b4104e"
+            "hash": "96159fcb523ae404b707186a75b4104ee23851e476a5e838e14584cf1e03f981"
         },
         "32bit": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12.exe#/setup.exe",
-            "hash": "sha256:9203d78e635e4f348d62f574a01cc58c"
+            "hash": "9203d78e635e4f348d62f574a01cc58c7a1ba87d30252f5e0e1f5c0330667a6e"
         },
         "arm64": {
             "url": "https://www.python.org/ftp/python/3.13.12/python-3.13.12-arm64.exe#/setup.exe",
-            "hash": "sha256:a4476454abcc329b04d330a296995cce"
+            "hash": "a4476454abcc329b04d330a296995cce5530544d3d2fc006d89f17ae9437fb8c"
         }
     },
     "pre_install": [
