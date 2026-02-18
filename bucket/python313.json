@@ -1,5 +1,5 @@
 {
-    "version": "3.13.12",
+    "version": "3.13.11",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -117,7 +117,7 @@
         },
         "hash": {
             "url": "https://www.python.org/downloads/release/python-$cleanVersion/",
-            "regex": "(?sm)$basename.*?$md5"
+            "regex": "(?sm)$basename.*?>([a-fA-F0-9]{64})</td>"
         }
     }
 }
