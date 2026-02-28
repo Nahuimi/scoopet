@@ -1,23 +1,21 @@
 {
-  "version": "0.1.1",
-  "description": "剪贴板增强工具",
-  "homepage": "https://github.com/mosheng1/QuickClipboard",
-  "license": "Apache-2.0",
-  "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v0.1.1/QuickClipboard_0.1.1_portable.exe",
-  "hash": "666666666666666894d82c01669434dee4996f4f3e",
-  "pre_install": [
-    "Rename-Item \"$dir\\QuickClipboard_$version_portable.exe\" \"QuickClipboard.exe\""
-  ],
-  "bin": "QuickClipboard.exe",
-  "shortcuts": [
-    [
-      "QuickClipboard.exe",
-      "QuickClipboard"
-    ]
-  ],
-  "persist": "data",
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v$version/QuickClipboard_$version_portable.exe"
-  }
+    "version": "0.2.0",
+    "description": "剪贴板增强工具",
+    "homepage": "https://github.com/mosheng1/QuickClipboard",
+    "license": "Apache-2.0",
+    "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v0.2.0/QuickClipboard_0.2.0_portable.exe",
+    "hash": "b85944f6872ae85e99fd1f5e8584ed86a40ce894d82c01669434dee4996f4f3e",
+    "pre_install": "Rename-Item \"$dir\\QuickClipboard_$version_portable.exe\" \"QuickClipboard.exe\"",
+    "bin": "QuickClipboard.exe",
+    "shortcuts": [
+        [
+            "QuickClipboard.exe",
+            "QuickClipboard"
+        ]
+    ],
+    "persist": "data",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v$version/QuickClipboard_$version_portable.exe"
+    }
 }
