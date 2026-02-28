@@ -12,7 +12,7 @@
   "extract_dir": "VideOCR-GPU-v1.4.1-CUDA-12.9",
   "bin": "VideOCR.exe",
   "shortcuts": [["VideOCR.exe", "VideOCR GPU CUDA 12.9"]],
-  "persist": "videocr_gui_config.ini",
+  "persist": ["videocr_gui_config.ini"],
   "checkver": "github",
   "autoupdate": {
     "architecture": {
