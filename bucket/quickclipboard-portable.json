@@ -1,12 +1,12 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.1"，
   "description": "剪贴板增强工具",
   "homepage": "https://github.com/mosheng1/QuickClipboard",
   "license": "Apache-2.0",
   "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v0.1.1/QuickClipboard_0.1.1_portable.exe",
-  "hash": "b85944f6872ae85e99fd1f5e8584ed86a40ce894d82c01669434dee4996f4f3e",
+  "hash": "666666666666666894d82c01669434dee4996f4f3e",
   "pre_install": [
-    "Rename-Item \"$dir\\QuickClipboard_0.1.1_portable.exe\" \"QuickClipboard.exe\""
+    "Rename-Item \"$dir\\QuickClipboard_$version_portable.exe\" \"QuickClipboard.exe\""
   ],
   "bin": "QuickClipboard.exe",
   "shortcuts": [
@@ -16,13 +16,8 @@
     ]
   ],
   "persist": "data",
-  "checkver": {
-    "github": "mosheng1/QuickClipboard"
-  },
+  "checkver": "github",
   "autoupdate": {
-    "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v$version/QuickClipboard_$version_portable.exe",
-    "pre_install": [
-      "Rename-Item \"$dir\\QuickClipboard_$version_portable.exe\" \"QuickClipboard.exe\""
-    ]
+    "url": "https://github.com/mosheng1/QuickClipboard/releases/download/v$version/QuickClipboard_$version_portable.exe"
   }
 }
