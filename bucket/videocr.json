@@ -9,7 +9,7 @@
             "hash": "37d1e8ace0f92cc2c8275b151785946dc31bc304de5d746b7ecdceb510879f77"
         }
     },
-    "extract_dir": "VideOCR-GPU-v1.4.0-CUDA-12.9",
+    "extract_dir": "VideOCR-GPU-v$version-CUDA-12.9",
     "bin": [
         "VideOCR.exe",
         [
