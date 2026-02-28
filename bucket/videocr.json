@@ -10,9 +10,14 @@
     }
   },
   "extract_dir": "VideOCR-GPU-v1.4.1-CUDA-12.9",
+  "pre_install": [
+    "if (!(Test-Path \"$persist_dir\\videocr_gui_config.ini\")) {",
+    "    Set-Content -Path \"$dir\\videocr_gui_config.ini\" -Value \"[Settings]`r`n--language = ch\" -Encoding UTF8",
+    "}"
+  ],
   "bin": "VideOCR.exe",
   "shortcuts": [["VideOCR.exe", "VideOCR GPU CUDA 12.9"]],
-  "persist": ["videocr_gui_config.ini"],
+  "persist": "videocr_gui_config.ini",
   "checkver": "github",
   "autoupdate": {
     "architecture": {
