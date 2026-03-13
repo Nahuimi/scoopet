@@ -1,18 +1,18 @@
 {
-    "version": "0.7.1",
+    "version": "0.7.2",
     "description": "A terminal tool that right-sizes LLM models to your system's RAM, CPU, and GPU.",
     "homepage": "https://github.com/AlexsJones/llmfit",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AlexsJones/llmfit/releases/download/v0.7.1/llmfit-v0.7.1-x86_64-pc-windows-msvc.zip",
-            "hash": "8c9998eb0e86ecafb48635f20db1a4fbeabc9f8fba3fc8e05bb5bcfc27f19927",
-            "extract_dir": "llmfit-v0.7.1-x86_64-pc-windows-msvc"
+            "url": "https://github.com/AlexsJones/llmfit/releases/download/v0.7.2/llmfit-v0.7.2-x86_64-pc-windows-msvc.zip",
+            "hash": "d79f54f9a4aac95465e70dd1090f87d2c8963dd464de54f3d1734ea8cab9001f",
+            "extract_dir": "llmfit-v0.7.2-x86_64-pc-windows-msvc"
         },
         "arm64": {
-            "url": "https://github.com/AlexsJones/llmfit/releases/download/v0.7.1/llmfit-v0.7.1-aarch64-pc-windows-msvc.zip",
-            "hash": "9cac242940ec6962cbe5ad9c78451e210aa9cd073986fbdf67845dacd059c464",
-            "extract_dir": "llmfit-v0.7.1-aarch64-pc-windows-msvc"
+            "url": "https://github.com/AlexsJones/llmfit/releases/download/v0.7.2/llmfit-v0.7.2-aarch64-pc-windows-msvc.zip",
+            "hash": "e69433cc0263280fa3f5128092fcb460202e110fdc65ce1f76ae02176f9cb94e",
+            "extract_dir": "llmfit-v0.7.2-aarch64-pc-windows-msvc"
         }
     },
     "bin": "llmfit.exe",
