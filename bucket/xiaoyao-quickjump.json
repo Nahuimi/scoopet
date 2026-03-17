@@ -1,0 +1,25 @@
+{
+  "version": "4.5.5",
+  "description": "文件对话框快速跳转当前文件夹",
+  "homepage": "https://github.com/lch319/XiaoYao_QuickJump",
+  "license": "Freeware",
+  "url": "https://github.com/lch319/XiaoYao_QuickJump/releases/download/4.5.5/XiaoYao_QuickJump_4.5.5.zip",
+  "hash": "5e4c1bf29de5aae191acf8d3ac17110c93bd307791c8a03674e2d6a1381eda97",
+  "extract_dir": "XiaoYao_快速跳转",
+  "bin": "XiaoYao_快速跳转.exe",
+  "shortcuts": [
+    ["XiaoYao_快速跳转.exe", "逍遥快速跳转"]
+  ],
+  "persist": "个人配置.ini",
+  "pre_install": [
+    "if (!(Test-Path \"$persist_dir\\个人配置.ini\")) {",
+    "  Set-Content \"$persist_dir\\个人配置.ini\" @';",
+    ";保存配置后需要重启软件才能生效",
+    "'; -Encoding utf8",
+    "}"
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/lch319/XiaoYao_QuickJump/releases/download/$version/XiaoYao_QuickJump_$version.zip"
+  }
+}
