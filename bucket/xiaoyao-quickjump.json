@@ -16,10 +16,7 @@
   "persist": "个人配置.ini",
   "pre_install": [
     "if (!(Test-Path \"$persist_dir\\个人配置.ini\")) {",
-    "  New-Item \"$persist_dir\\个人配置.ini\" -ItemType File -Force | Out-Null",
-    "  Set-Content \"$persist_dir\\个人配置.ini\" @';",
-    ";保存配置后需要重启软件才能生效",
-    "'; -Encoding utf8",
+    "  New-Item -Force -Path \"$persist_dir\" -Name '个人配置.ini' -Value \";保存配置后需要重启软件才能生效\" | Out-Null",
     "}"
   ],
   "checkver": "github",
