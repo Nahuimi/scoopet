@@ -7,7 +7,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.6.1/siyuan-v3.6.1-win.exe#/dl.7z",
+            "url": "https://github.com/demoshang/siyuan-patch/releases/download/v3.6.1/siyuan-3.6.1-win.exe#/dl.7z",
             "hash": "dcad7aa25880eb795222bf390913fc16ccb317ea80e15bb18f86115a84d9eb0b",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
