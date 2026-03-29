@@ -1,30 +1,35 @@
 {
-  "version": "1.4.1",
-  "description": "VideOCR GPU CUDA 12.9 便携",
-  "homepage": "https://github.com/timminator/VideOCR",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/timminator/VideOCR/releases/download/v1.4.1/VideOCR-GPU-v1.4.1-CUDA-12.9.7z",
-      "hash": "37d1e8ace0f92cc2c8275b151785946dc31bc304de5d746b7ecdceb510879f77"
-    }
-  },
-  "extract_dir": "VideOCR-GPU-v1.4.1-CUDA-12.9",
-  "pre_install": [
-    "if (!(Test-Path \"$persist_dir\\videocr_gui_config.ini\")) {",
-    "    Set-Content -Path \"$dir\\videocr_gui_config.ini\" -Value \"[Settings]`r`n--language = ch\" -Encoding UTF8",
-    "}"
-  ],
-  "bin": "VideOCR.exe",
-  "shortcuts": [["VideOCR.exe", "VideOCR GPU CUDA 12.9"]],
-  "persist": "videocr_gui_config.ini",
-  "checkver": "github",
-  "autoupdate": {
+    "version": "1.4.2",
+    "description": "VideOCR GPU CUDA 12.9 便携",
+    "homepage": "https://github.com/timminator/VideOCR",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/timminator/VideOCR/releases/download/v$version/VideOCR-GPU-v$version-CUDA-12.9.7z"
-      }
+        "64bit": {
+            "url": "https://github.com/timminator/VideOCR/releases/download/v1.4.2/VideOCR-GPU-v1.4.2-CUDA-12.9.7z",
+            "hash": "d9c2ccbdf665a089c208f58195f30440b9c5119a321988c0908a5a08ae8f0e8b"
+        }
     },
-    "extract_dir": "VideOCR-GPU-v$version-CUDA-12.9"
-  }
+    "extract_dir": "VideOCR-GPU-v1.4.2-CUDA-12.9",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\videocr_gui_config.ini\")) {",
+        "    Set-Content -Path \"$dir\\videocr_gui_config.ini\" -Value \"[Settings]`r`n--language = ch\" -Encoding UTF8",
+        "}"
+    ],
+    "bin": "VideOCR.exe",
+    "shortcuts": [
+        [
+            "VideOCR.exe",
+            "VideOCR GPU CUDA 12.9"
+        ]
+    ],
+    "persist": "videocr_gui_config.ini",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/timminator/VideOCR/releases/download/v$version/VideOCR-GPU-v$version-CUDA-12.9.7z"
+            }
+        },
+        "extract_dir": "VideOCR-GPU-v$version-CUDA-12.9"
+    }
 }
