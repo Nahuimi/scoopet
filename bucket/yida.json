@@ -1,12 +1,12 @@
 {
-    "version": "1.3.7",
+    "version": "1.3.8",
     "description": "益达App(yidaApp)是一款开源跨平台的漫画、音频、视频、RSS、小说工具",
     "homepage": "https://github.com/xiaohucode/yidaRule",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xiaohucode/yidaRule/releases/download/1.3.7/yidaApp-1.3.7-windows-x86_64.zip",
-            "hash": "e8fb3adc412c74cb12a6515b64e72140e0279169f3923a86cff8793a0c2fe469"
+            "url": "https://github.com/xiaohucode/yidaRule/releases/download/1.3.8/yidaApp-1.3.8-windows-x86_64.zip",
+            "hash": "11546427b75f05173ea1e465fe9a64d192da481ea0177eb94cd0bace71362780"
         }
     },
     "extract_dir": "Release",
