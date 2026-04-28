@@ -1,15 +1,15 @@
 {
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "VideOCR GPU CUDA 12.9 便携",
     "homepage": "https://github.com/timminator/VideOCR",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/timminator/VideOCR/releases/download/v1.5.0/VideOCR-GPU-v1.5.0-CUDA-12.9.7z",
-            "hash": "0a18b80c97928cdc67886b316cd1254b6b1af946422a5c645427f6efa66aa258"
+            "url": "https://github.com/timminator/VideOCR/releases/download/v1.5.1/VideOCR-GPU-v1.5.1-CUDA-12.9.7z",
+            "hash": "5bc0b4a499873fa7a2e8df29d8585951e34dabffc60c9bccf442be91e9606f6c"
         }
     },
-    "extract_dir": "VideOCR-GPU-v1.5.0-CUDA-12.9",
+    "extract_dir": "VideOCR-GPU-v1.5.1-CUDA-12.9",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\videocr_gui_config.ini\")) {",
         "    Set-Content -Path \"$dir\\videocr_gui_config.ini\" -Value \"[Settings]`r`n--language = ch\" -Encoding UTF8",
