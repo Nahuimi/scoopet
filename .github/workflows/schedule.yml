@@ -1,4 +1,4 @@
-于:
+on:
   workflow_dispatch:
   schedule:
     # run every 12 hours
