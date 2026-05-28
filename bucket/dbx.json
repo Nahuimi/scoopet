@@ -5,29 +5,26 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/t8y2/dbx/releases/download/v0.5.23/DBX_0.5.23_x64-setup.exe",
-            "hash": "e46ad20f182d24e3797b82bf548787616d06ed3e2450c3018caaa0e011ef7bb2"
+  "url": "https://github.com/t8y2/dbx/releases/download/v0.5.23/DBX_0.5.23_x64-setup.exe",
+  "hash": "e46ad20f182d24e3797b82bf548787616d06ed3e2450c3018caaa0e011ef7bb2"
         }
     },
     "innosetup": false,
     "installer": {
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
+        "args": ["/S", "/D=$dir"]
     },
     "uninstaller": {
         "file": "uninstall.exe",
-        "args": "/S"
+        "args": ["/S"]
     },
     "checkver": {
         "github": "https://github.com/t8y2/dbx"
     },
     "autoupdate": {
         "architecture": {
-            "64bit": {
-                "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_x64-setup.exe"
-            }
+  "64bit": {
+      "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_x64-setup.exe"
+  }
         }
     }
 }
