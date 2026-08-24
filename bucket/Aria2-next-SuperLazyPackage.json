@@ -14,7 +14,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Nahuimi/Aria2-SuperLazyPackage/releases/download/v0.0.1/Aria2-SuperLazyPackage.zip",
-            "hash": "实际SHA256值",
+            "hash": "e77e4cc75a0af3d590d4a2cbf88b842adbc4a1e484e839428e06daf604fd425a",
             "extract_dir": "Aria2"
         }
     },
