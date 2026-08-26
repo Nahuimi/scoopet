@@ -3,8 +3,8 @@
   "description": "Maintained aria2 fork with extensive bug fixes and modernized architecture",
   "homepage": "https://github.com/AnInsomniacy/aria2-next",
   "license": {
-    "identifier": "GPL-2.0 license",
-    "url": "https://github.com/AnInsomniacy/aria2-next#GPL-2.0-1-ov-file"
+    "identifier": "GPL-2.0-only",
+    "url": "https://github.com/AnInsomniacy/aria2-next/blob/main/COPYING"
   },
   "architecture": {
     "64bit": {
@@ -17,11 +17,7 @@
     }
   },
   "bin": "aria2c.exe",
-  "checkver": {
-    "github": "https://api.github.com/repos/AnInsomniacy/aria2-next/releases",
-    "jp": "$[0].tag_name",
-    "regex": "v([\\d.]+)"
-  },
+  "checkver": "github",
   "autoupdate": {
     "architecture": {
       "64bit": {
