@@ -1,5 +1,5 @@
 {
-    "version": "25.2.4",
+    "version": "26.8.0",
     "description": "Powerful and free office suite, a successor to OpenOffice(.org).",
     "homepage": "https://libreoffice.org/",
     "license": "MPL-2.0",
@@ -9,16 +9,12 @@
     "notes": "If you are upgrading from portable version, you can migrate settings by copying \"$persist_dir\\Data\" to \"%AppData%\\LibreOffice\"",
     "architecture": {
         "64bit": {
-            "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/25.2.4/win/x86_64/LibreOffice_25.2.4_Win_x86-64.msi#/dl.msi_",
-            "hash": "a985d08e5311f0fdefbf6b0a599b60112d1fcd388d7ad34121e0be53d597b048"
-        },
-        "32bit": {
-            "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/25.2.4/win/x86/LibreOffice_25.2.4_Win_x86.msi#/dl.msi_",
-            "hash": "380bbdd36593d725aa288894f988accaf40cea8b932bff41998cea92a42a9036"
+            "url": "https://mirrors.aliyun.com/tdf/libreoffice/stable/26.8.0/win/x86_64/LibreOffice_26.8.0_Win_x86-64.msi#/dl.msi_",
+            "hash": "4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95"
         },
         "arm64": {
-            "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/25.2.4/win/aarch64/LibreOffice_25.2.4_Win_aarch64.msi#/dl.msi_",
-            "hash": "71dd1564b666473951a6d2843af7989caf27e879855f4fdba84a6ae639515a19"
+            "url": "https://mirrors.aliyun.com/tdf/libreoffice/stable/26.8.0/win/aarch64/LibreOffice_26.8.0_Win_aarch64.msi#/dl.msi_",
+            "hash": "7ea33f771223a68c49538438e5f57e7805bc951edc8d22dcdf4ef26e3ab2fbe0"
         }
     },
     "pre_install": [
@@ -69,23 +65,18 @@
         ]
     ],
     "checkver": {
-        "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/",
-        "regex": "([\\d.]+)/"
+        "url": "https://download.documentfoundation.org/libreoffice/stable/",
+        "regex": "href=\"(\\d+\\.\\d+\\.\\d+)/\"",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/$version/win/x86_64/LibreOffice_$version_Win_x86-64.msi#/dl.msi_"
-            },
-            "32bit": {
-                "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/$version/win/x86/LibreOffice_$version_Win_x86.msi#/dl.msi_"
+                "url": "https://mirrors.aliyun.com/tdf/libreoffice/stable/$version/win/x86_64/LibreOffice_$version_Win_x86-64.msi#/dl.msi_"
             },
             "arm64": {
-                "url": "https://mirrors.ustc.edu.cn/libreoffice/libreoffice/stable/$version/win/aarch64/LibreOffice_$version_Win_aarch64.msi#/dl.msi_"
+                "url": "https://mirrors.aliyun.com/tdf/libreoffice/stable/$version/win/aarch64/LibreOffice_$version_Win_aarch64.msi#/dl.msi_"
             }
-        },
-        "hash": {
-            "url": "$url.sha256"
         }
     }
 }

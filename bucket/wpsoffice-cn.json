@@ -4,27 +4,41 @@
     "homepage": "https://wps.cn/",
     "license": {
         "identifier": "Freeware",
-        "url": "https://wps.cn/privacy/full_account/"
+        "url": "https://www.wps.com/eula"
     },
     "architecture": {
         "64bit": {
-            "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_28505.exe",
+            "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_28505.exe#/dl.7z",
             "hash": "1c8808f4dc3e4066549d41a5890ed92afd159d2c475f643c4544196c19c1a994"
         }
     },
+    "extract_dir": "$_11_",
     "pre_install": [
-        "Expand-7zipArchive \"$dir\\$fname\"",
-        "Expand-7zipArchive \"$dir\\`$_11_\\`$EXEFILE\" -Switches '-t#'",
-        "Move-Item \"$dir\\`$_11_\\*.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\*\" -Exclude '4.7z', '2.7z' -Recurse",
-        "Expand-7zipArchive \"$dir\\2.7z\" -ExtractDir 'CONTROL\\office6' -Removal",
-        "Expand-7zipArchive \"$dir\\4.7z\" -ExtractDir 'office6' -Removal"
+        "Expand-7zipArchive \"$dir\\`$EXEFILE\" -Switches '-t#'",
+        "Remove-Item \"$dir\\*\" -Exclude '4.7z','2.7z' -Recurse",
+        "Expand-7zipArchive \"$dir\\4.7z\" -ExtractDir 'office6' -Removal",
+        "Expand-7zipArchive \"$dir\\2.7z\" -ExtractDir 'CONTROL\\office6' -Removal"
     ],
-    "bin": "wpsoffice.exe",
     "shortcuts": [
         [
             "wpsoffice.exe",
             "WPS Office"
+        ],
+        [
+            "wps.exe",
+            "WPS 文字"
+        ],
+        [
+            "et.exe",
+            "WPS 表格"
+        ],
+        [
+            "wpp.exe",
+            "WPS 演示"
+        ],
+        [
+            "ksomisc.exe",
+            "WPS 配置工具"
         ]
     ],
     "checkver": {
@@ -32,6 +46,10 @@
         "jsonpath": "$.productDetail.productVcode"
     },
     "autoupdate": {
-        "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_$buildVersion.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_$buildVersion.exe#/dl.7z"
+            }
+        }
     }
 }
