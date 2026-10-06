@@ -1,5 +1,5 @@
 {
-    "##": "Scoop manifest for the Nahuimi/7zip fork build. This manifest ships the NSIS-script-decompile-enabled ('nsis') flavor, whose 7z.exe can list and extract '[NSIS].nsi' from NSIS installers. Release assets are produced by .github/workflows/release-windows.yml and published as a GitHub pre-release; for the standard flavor instead, remove the '-nsis' infix from the installer asset names in 'architecture' and 'autoupdate'. The context menu entries also require 'scripts/7-zip/install-context.reg' and 'scripts/7-zip/uninstall-context.reg' in the bucket.",
+    "##": "Scoop manifest for the Nahuimi/7zip fork build. This manifest ships the NSIS-script-decompile-enabled ('nsis') flavor, whose 7z.exe can list and extract '[NSIS].nsi' from NSIS installers. Release assets are produced by .github/workflows/release-windows.yml and published as a GitHub pre-release; for the standard flavor instead, remove the '-nsis' infix from the installer asset names in 'architecture' and 'autoupdate'. The context menu entries also require 'scripts/7-zip/install-context.reg' and 'scripts/7-zip/uninstall-context.reg' in the bucket. Extraction uses the official 7zr.exe downloaded at install time, so Scoop does not add its '7zip' helper app as a dependency.",
     "version": "26.04",
     "description": "7-Zip fork build with password book, smart extract and NSIS script decompilation: a multi-format file archiver with high compression ratios.",
     "homepage": "https://github.com/Nahuimi/7zip",
@@ -23,8 +23,10 @@
             "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x64-installer.exe",
             "hash": "483b33a65fd6aadc6dca9923ce8a83784e6757c90fc6f2bbb096517347bdd750",
             "pre_install": [
-                "Expand-7zipArchive \"$dir\\$fname\" \"$dir\"",
-                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", \"$dir\\7zip.log\" -Force -ErrorAction SilentlyContinue",
+                "$7zr = Join-Path $env:TMP '7zr.exe'",
+                "Invoke-WebRequest -Uri \"https://github.com/ip7z/7zip/releases/download/$version/7zr.exe\" -OutFile $7zr",
+                "Invoke-ExternalCommand $7zr @('x', \"$dir\\$fname\", \"-o$dir\", '-y') | Out-Null",
+                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", $7zr -Force -ErrorAction SilentlyContinue",
                 "if (!(Test-Path \"$dir\\7zPasswordBook.db\")) { New-Item -Path \"$dir\\7zPasswordBook.db\" -ItemType File | Out-Null }"
             ]
         },
@@ -32,8 +34,10 @@
             "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x86-installer.exe",
             "hash": "11b0e294603f7cb6451e27d10f08f11559c2a798e58d88f5ed42500dcde2349d",
             "pre_install": [
-                "Expand-7zipArchive \"$dir\\$fname\" \"$dir\"",
-                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", \"$dir\\7zip.log\" -Force -ErrorAction SilentlyContinue",
+                "$7zr = Join-Path $env:TMP '7zr.exe'",
+                "Invoke-WebRequest -Uri \"https://github.com/ip7z/7zip/releases/download/$version/7zr.exe\" -OutFile $7zr",
+                "Invoke-ExternalCommand $7zr @('x', \"$dir\\$fname\", \"-o$dir\", '-y') | Out-Null",
+                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", $7zr -Force -ErrorAction SilentlyContinue",
                 "if (!(Test-Path \"$dir\\7zPasswordBook.db\")) { New-Item -Path \"$dir\\7zPasswordBook.db\" -ItemType File | Out-Null }"
             ]
         }
