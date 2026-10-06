@@ -1,0 +1,86 @@
+{
+    "##": "Scoop manifest for the Nahuimi/7zip fork build. This manifest ships the NSIS-script-decompile-enabled ('nsis') flavor, whose 7z.exe can list and extract '[NSIS].nsi' from NSIS installers. Release assets are produced by .github/workflows/release-windows.yml and published as a GitHub pre-release; for the standard flavor instead, remove the '-nsis' infix from the installer asset names in 'architecture' and 'autoupdate'. The context menu entries also require 'scripts/7-zip/install-context.reg' and 'scripts/7-zip/uninstall-context.reg' in the bucket.",
+    "version": "26.04",
+    "description": "7-Zip fork build with password book, smart extract and NSIS script decompilation: a multi-format file archiver with high compression ratios.",
+    "homepage": "https://github.com/Nahuimi/7zip",
+    "license": {
+        "identifier": "BSD-2-Clause, BSD-3-Clause, LGPL-2.1-or-later",
+        "url": "https://www.7-zip.org/license.txt"
+    },
+    "notes": [
+        "To register the context menu entry, please execute the following command:",
+        "reg import \"$dir\\install-context.reg\"",
+        "",
+        "This build can list and extract the '[NSIS].nsi' script inside NSIS installers.",
+        "",
+        "The password book database is stored in \"$persist_dir\\7zPasswordBook.db\" and is preserved across updates.",
+        "",
+        "If an error occurs while attempting to delete files during uninstallation, run the following command and then retry:",
+        "Stop-Process -Name 'explorer'"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x64-installer.exe",
+            "hash": "483b33a65fd6aadc6dca9923ce8a83784e6757c90fc6f2bbb096517347bdd750",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\$fname\" \"$dir\"",
+                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", \"$dir\\7zip.log\" -Force -ErrorAction SilentlyContinue",
+                "if (!(Test-Path \"$dir\\7zPasswordBook.db\")) { New-Item -Path \"$dir\\7zPasswordBook.db\" -ItemType File | Out-Null }"
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x86-installer.exe",
+            "hash": "11b0e294603f7cb6451e27d10f08f11559c2a798e58d88f5ed42500dcde2349d",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\$fname\" \"$dir\"",
+                "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\$fname\", \"$dir\\7zip.log\" -Force -ErrorAction SilentlyContinue",
+                "if (!(Test-Path \"$dir\\7zPasswordBook.db\")) { New-Item -Path \"$dir\\7zPasswordBook.db\" -ItemType File | Out-Null }"
+            ]
+        }
+    },
+    "post_install": [
+        "$7zip_dir = $dir -replace '\\\\', '\\\\'",
+        "Get-ChildItem -Path \"$bucketsdir\\$bucket\\scripts\\7-zip\" -Filter '*.reg' -File | ForEach-Object {",
+        "    $content = Get-Content -Path $_.FullName -Encoding utf8",
+        "    if ($global) { $content = $content -replace 'HKEY_CURRENT_USER(?=.+Classes)', 'HKEY_LOCAL_MACHINE' }",
+        "    $content -replace '{{7zip_dir}}', $7zip_dir | Set-Content -Path \"$dir\\$($_.Name)\" -Encoding unicode",
+        "}"
+    ],
+    "bin": [
+        "7z.exe",
+        "7zG.exe",
+        "7zFM.exe"
+    ],
+    "shortcuts": [
+        [
+            "7zFM.exe",
+            "7-Zip\\7-Zip File Manager"
+        ],
+        [
+            "7-zip.chm",
+            "7-Zip\\7-Zip Help"
+        ]
+    ],
+    "persist": [
+        "Codecs",
+        "Formats",
+        "7zPasswordBook.db"
+    ],
+    "uninstaller": {
+        "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" *> $null }"
+    },
+    "checkver": {
+        "github": "https://api.github.com/repos/Nahuimi/7zip/releases",
+        "jsonpath": "$[0].tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nahuimi/7zip/releases/download/v$version/7zip-v$version-nsis-windows-x64-installer.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/Nahuimi/7zip/releases/download/v$version/7zip-v$version-nsis-windows-x86-installer.exe"
+            }
+        }
+    }
+}
