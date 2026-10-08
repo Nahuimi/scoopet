@@ -13,9 +13,12 @@
             "hash": "ffb453dbbefd6e7633c107a534e4f1cbbb0bc6577237cc15722a264f79d55f4a"
         }
     },
+    "bin": [
+        ["cli\\ImeWlConverterCmd.exe", "imewlconverter"]
+    ],
     "shortcuts": [
         [
-            "深蓝词库转换.exe",
+            "gui\\深蓝词库转换.exe",
             "深蓝词库转换"
         ]
     ],
