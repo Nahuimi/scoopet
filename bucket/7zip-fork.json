@@ -1,6 +1,6 @@
 {
     "##": "Scoop manifest for the Nahuimi/7zip fork build. This manifest ships the NSIS-script-decompile-enabled ('nsis') flavor, whose 7z.exe can list and extract '[NSIS].nsi' from NSIS installers. Release assets are produced by .github/workflows/release-windows.yml and published as a GitHub pre-release; for the standard flavor instead, remove the '-nsis' infix from the installer asset names in 'architecture' and 'autoupdate'. The context menu entries also require 'scripts/7-zip/install-context.reg' and 'scripts/7-zip/uninstall-context.reg' in the bucket. Extraction uses the official 7zr.exe downloaded at install time, so Scoop does not add its '7zip' helper app as a dependency.",
-    "version": "26.04",
+    "version": "26.05",
     "description": "7-Zip fork build with password book, smart extract and NSIS script decompilation: a multi-format file archiver with high compression ratios.",
     "homepage": "https://github.com/Nahuimi/7zip",
     "license": {
@@ -20,8 +20,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x64-installer.exe",
-            "hash": "483b33a65fd6aadc6dca9923ce8a83784e6757c90fc6f2bbb096517347bdd750",
+            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.05/7zip-v26.05-nsis-windows-x64-installer.exe",
+            "hash": "be520f8a1b5cf6b9614a2e38cb8eccbb68dce4e20a619c46c21aeefeb477d38b",
             "pre_install": [
                 "$7zr = Join-Path $env:TMP '7zr.exe'",
                 "Invoke-WebRequest -Uri \"https://github.com/ip7z/7zip/releases/download/$version/7zr.exe\" -OutFile $7zr",
@@ -31,8 +31,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.04/7zip-v26.04-nsis-windows-x86-installer.exe",
-            "hash": "11b0e294603f7cb6451e27d10f08f11559c2a798e58d88f5ed42500dcde2349d",
+            "url": "https://github.com/Nahuimi/7zip/releases/download/v26.05/7zip-v26.05-nsis-windows-x86-installer.exe",
+            "hash": "88cbf09c7989a803d1905d2be647a2b5397684afb9cafb86af4d57b9af09aacc",
             "pre_install": [
                 "$7zr = Join-Path $env:TMP '7zr.exe'",
                 "Invoke-WebRequest -Uri \"https://github.com/ip7z/7zip/releases/download/$version/7zr.exe\" -OutFile $7zr",
