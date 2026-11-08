@@ -1,10 +1,10 @@
 {
-    "version": "4.6.4",
+    "version": "4.6.6",
     "description": "文件对话框快速跳转当前文件夹",
     "homepage": "https://github.com/lch319/XiaoYao_QuickJump",
     "license": "Freeware",
-    "url": "https://github.com/lch319/XiaoYao_QuickJump/releases/download/4.6.4/XiaoYao_QuickJump_4.6.4.zip",
-    "hash": "5c1b9f97edd9ec5773dae6f135e09d9ecdb63ba9fca033a7eb2157ea87fffdb0",
+    "url": "https://github.com/lch319/XiaoYao_QuickJump/releases/download/4.6.6/XiaoYao_QuickJump_4.6.6.zip",
+    "hash": "920feaa2c3c9137f4076e21cba2923c11d2796840f10c9ca07576b348c662154",
     "extract_dir": "XiaoYao_快速跳转",
     "bin": "XiaoYao_快速跳转.exe",
     "shortcuts": [
