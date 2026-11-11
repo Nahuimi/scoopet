@@ -1,46 +1,46 @@
 {
-    "version": "7.2.5",
-    "description": "A messaging app with a focus on speed and security",
-    "homepage": "https://telegram.org",
-    "license": "GPL-3.0-only",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable-x64.7.2.5.zip",
-            "hash": "aa25bb131ced8df0a8c6d2466dd71d2c06ae19c6e2c15b27a8426437e4b2eb3c"
-        },
-        "32bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable.7.2.5.zip",
-            "hash": "d0af574be25058c82e274c34492fcadaca64f36057564274390986a9907d5d77"
-        },
-        "arm64": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.2.5/tportable-arm64.7.2.5.zip",
-            "hash": "f130cfe8b0088bb1ef1c8013587cbb2b321ab753df766e2a0e511b927c30adbb"
-        }
+  "version": "7.4.1",
+  "description": "A messaging app with a focus on speed and security",
+  "homepage": "https://telegram.org",
+  "license": "GPL-3.0-only",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-portable-win-x64-7.4.1.zip",
+      "hash": "6c1191b770d49a2b8f6b0d78fd8d4402e6d7098513e7213a2649990471238392"
     },
-    "extract_dir": "Telegram",
-    "pre_install": "Set-Content \"$dir\\telegram.cmd\" '@start \"Telegram\" /D \"%~dp0\" \"%~dp0Telegram.exe\" %*' -Encoding Ascii",
-    "bin": "telegram.cmd",
-    "shortcuts": [
-        [
-            "Telegram.exe",
-            "Telegram"
-        ]
-    ],
-    "persist": "tdata",
-    "checkver": {
-        "github": "https://github.com/telegramdesktop/tdesktop"
+    "32bit": {
+      "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-portable-win-x86-7.4.1.zip",
+      "hash": "ea0e518233c9db6e69881df4fee15dbacaae20cfa07ebd875685e0ebbff41014"
     },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-x64.$version.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable.$version.zip"
-            },
-            "arm64": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-arm64.$version.zip"
-            }
-        }
+    "arm64": {
+      "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-portable-win-arm-7.4.1.zip",
+      "hash": "ca4bca5f43d414c7440b34525bf7f2ac0ebc3415285d58d11379759a9b089bba"
     }
+  },
+  "extract_dir": "Telegram",
+  "pre_install": "Set-Content \"$dir\\telegram.cmd\" '@start \"Telegram\" /D \"%~dp0\" \"%~dp0Telegram.exe\" %*' -Encoding Ascii",
+  "bin": "telegram.cmd",
+  "shortcuts": [
+    [
+      "Telegram.exe",
+      "Telegram"
+    ]
+  ],
+  "persist": "tdata",
+  "checkver": {
+    "github": "https://github.com/telegramdesktop/tdesktop"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-x64-$version.zip"
+      },
+      "32bit": {
+        "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-x86-$version.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/td-portable-win-arm-$version.zip"
+      }
+    }
+  }
 }
